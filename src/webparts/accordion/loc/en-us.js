@@ -1,19 +1,19 @@
 define([], function() {
   return {
-    "PropertyPaneDescription": "Customize your Text Editor",
+    "PropertyPaneDescription": "Customize your Accordion",
     "BasicGroupName": "Tabs",
     "TextEditorGroupName": "Text Editor",
-    "LayoutGroupName": "Formatting",
+    "LayoutGroupName": "Layout",
     "DescriptionFieldLabel": "Description Field",
     "Inline": "Inline",
-    "ManageTabs": "Manage Tabs",
+    "ManageAccordion": "Manage Tabs",
     "Tabs": "Tabs",
     "DisableColor": "Inactive Tab Color",
-    "ActiveColor": "Active Tab Color",
-    "TabHeaderTextColor": "Tab Header Text Color",
-    "TabFont": "Tab Font Face",
-    "TabFontSize": "Tab Font Size",
     "SelectedColor": "Selected Tab Border Color",
+    "Collapsible": "Collapsible",
+    "Animate": "Animate",
+    "Speed": "Speed (ms)",
+    "HeightStyle": "Height Style",
     "ErrorClassicSharePoint": "Sorry, but this Web Part does not work in a classic SharePoint site, but only in a modern site."
   }
 });

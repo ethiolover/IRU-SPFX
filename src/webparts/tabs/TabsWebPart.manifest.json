@@ -1,27 +1,50 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
   "id": "bb5c38aa-5385-4b1d-bcb4-7bc5d2f207c0",
-  "alias": "TabsWebPart",
+  "alias": "TabWebPart",
   "componentType": "WebPart",
-
-  // The "*" signifies that the version should be taken from the package.json
-  "version": "*",
+  "version": "1.0.0",
   "manifestVersion": 2,
-
-  // If true, the component can only be installed on sites where Custom Script is allowed.
-  // Components that allow authors to embed arbitrary script code should set this to true.
-  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
   "requiresCustomScript": false,
-  "supportedHosts": ["SharePointWebPart"],
-
-  "preconfiguredEntries": [{
-    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
-    "group": { "default": "Other" },
-    "title": { "default": "Tabs" },
-    "description": { "default": "Tabs Web Part" },
-    "officeFabricIconFontName": "Page",
-    "properties": {
-      "description": "Tabs"
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "IRU"
+      },
+      "title": {
+        "default": "Tab"
+      },
+      "description": {
+        "default": "IRU SPFx Tab Web Part"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "inline": true,
+        "activeColor": "#0275d8",
+        "disableColor": "#f8f7ee",
+        "selectedColor": "#9cc943",
+        "tabHeaderTextColor": "#000",
+        "tabFont": "Segoe UI",
+        "tabFontSize": 8,
+        "tabs": [
+          {
+            "Title": "Elementum",
+            "Content": "<h1>Lorem ipsum dolor sit amet</h1><p>consectetur adipiscing elit. Fusce fringilla neque id metus egestas, vitae pharetra arcu porttitor. Nullam consequat id urna eu pellentesque. Fusce ut velit pellentesque, ornare libero sit amet, tristique neque. Cras   incidunt et nisl nec mattis. Proin nisi nunc, rhoncus ac laoreet eget, pulvinar quis nisl. Vestibulum libero massa, eleifend ut suscipit et, aliquet id lorem. Aliquam in ornare arcu. Curabitur non turpis tortor.</p> <p>Nunc vehicula convallis augue, a molestie elit feugiat id. Fusce semper fermentum est vel viverra. Nam pellentesque tempus tempus. In molestie rutrum maximus. Pellentesque eget nulla neque. Phasellus egestas tempus eros, et fermentum sem mattis eget. Fusce vulputate nisl et mauris condimentum, non semper nisl elementum. Duis placerat purus id libero aliquet, at fermentum nisi malesuada. Morbi congue orci id ipsum pellentesque, non consequat enim fringilla.</p>"
+          },
+          {
+            "Title": "Tab 2",
+            "Content": "<b>Sample with rich html</b>"
+          },
+          {
+            "Title": "Tab 3",
+            "Content": "<a href='#'>Link</a>"
+          }
+        ]
+      }
     }
-  }]
+  ]
 }

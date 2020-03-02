@@ -1,22 +1,22 @@
-declare interface ITabsWebPartStrings {
+declare interface IAccordionWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
   TextEditorGroupName: string;
   LayoutGroupName: string;
   DescriptionFieldLabel: string;
   Inline: string;
-  ManageTabs: string;
-  Tabs: string;
+  ManageAccordion: string;
+  Accordion: string;
   DisableColor: string;
-  ActiveColor: string;
   SelectedColor: string;
-  TabHeaderTextColor: string;
-  TabFont: string;
-  TabFontSize: string;
+  Collapsible: string;
+  Animate: string;
+  Speed: string;
+  HeightStyle: string;
   ErrorClassicSharePoint: string;
 }
 
-declare module 'TabsWebPartStrings' {
-  const strings: ITabsWebPartStrings;
+declare module 'AccordionWebPartStrings' {
+  const strings: IAccordionWebPartStrings;
   export = strings;
 }

@@ -9,10 +9,27 @@
           "manifest": "./src/webparts/tabs/TabsWebPart.manifest.json"
         }
       ]
+    },
+    "accordion-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/accordion/AccordionWebPart.js",
+          "manifest": "./src/webparts/accordion/AccordionWebPart.manifest.json"
+        }
+      ]
     }
   },
-  "externals": {},
+  "externals": {
+    "sp-client-custom-fields": "node_modules/sp-client-custom-fields/dist/sp-client-custom-fields.bundle.js",
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jQuery"
+    }
+  },
   "localizedResources": {
-    "TabsWebPartStrings": "lib/webparts/tabs/loc/{locale}.js"
+    "sp-client-custom-fields/strings": "node_modules/sp-client-custom-fields/lib/loc/{locale}.js",
+    "TabsWebPartStrings": "lib/webparts/tabs/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "AccordionWebPartStrings": "lib/webparts/accordion/loc/{locale}.js"
   }
 }
